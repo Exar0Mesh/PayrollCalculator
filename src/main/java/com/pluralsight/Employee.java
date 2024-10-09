@@ -3,28 +3,28 @@ package com.pluralsight;
 public class Employee {
     private int employeeID;
     private String name;
-    private float hoursWorked;
-    private float payRate;
+    private double hoursWorked;
+    private double payRate;
 
-    public Employee(int employeeID, String name, float hoursWorked, float payRate) {
+    public Employee(int employeeID, String name, double hoursWorked, double payRate) {
         this.employeeID = employeeID;
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
     }
-    public int getID() {
+    public int getEmployeeID() {
         return this.employeeID;
     }
     public String getName() {
         return this.name;
     }
-    public float getHours() {
+    public double getHours() {
         return this.hoursWorked;
     }
-    public float getPayRate() {
+    public double getPayRate() {
         return this.payRate;
     }
-    public float getGrossPay() {
+    public double getGrossPay() {
         return hoursWorked * payRate;
     }
 
